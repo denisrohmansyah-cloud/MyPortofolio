@@ -18,10 +18,9 @@ Responsive, single-page personal portfolio built with HTML5, CSS3, and vanilla J
 - `assets/images/` — optimized WebP images (see `assets/images/README.md`)
 - `assets/documents/` — PDF certificates (see `assets/documents/README.md`)
 
-## Add the original photos and certificates
-The page source is committed. The original photos and certificate PDF are not yet stored in this repository. To restore the exact media shown in the prepared portfolio package, copy the contents of `assets/images/` and `assets/documents/` from the supplied `denis-electrical-portfolio-animated.zip` (or the latest updated portfolio ZIP) into the matching directories here. Keep filenames unchanged; the page already references them.
+## Media assets
 
-Expected image filenames:
+These optimized WebP files are already committed:
 - `profile.webp`
 - `kwh-ku-login.webp`
 - `nevabsenku-login.webp`
@@ -29,16 +28,16 @@ Expected image filenames:
 - `fiber-lab-installation-02.webp`
 - `community-mentoring-01.webp`
 - `community-mentoring-02.webp`
+
+The achievement photos, certificate previews, and original BNSP certificate PDF still need to be copied from the latest prepared portfolio ZIP into their referenced paths:
 - `achievement-national.webp`
-- `certificate-national.webp`
 - `achievement-province.webp`
-- `certificate-province.webp`
 - `achievement-banyumas.webp`
+- `certificate-national.webp`
+- `certificate-province.webp`
+- `assets/documents/sertifikat-jointer-bnsp.pdf`
 
-Expected document:
-- `sertifikat-jointer-bnsp.pdf`
-
-Until those assets are copied, styled fallback panels appear in place of the missing photos.
+Keep the filenames unchanged because the HTML references them. Until the remaining files are added, the page's missing-image fallback prevents broken image icons, but certificate links that point to missing files will not open successfully.
 
 ## Run locally
 Open `index.html` in a browser, or use a local server such as VS Code Live Server.
