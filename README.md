@@ -29,15 +29,14 @@ These optimized WebP files are already committed:
 - `community-mentoring-01.webp`
 - `community-mentoring-02.webp`
 
-The achievement photos, certificate previews, and original BNSP certificate PDF still need to be copied from the latest prepared portfolio ZIP into their referenced paths:
+The achievement images and certificate previews are committed in this folder:
 - `achievement-national.webp`
 - `achievement-province.webp`
 - `achievement-banyumas.webp`
 - `certificate-national.webp`
 - `certificate-province.webp`
-- `assets/documents/sertifikat-jointer-bnsp.pdf`
 
-Keep the filenames unchanged because the HTML references them. Until the remaining files are added, the page's missing-image fallback prevents broken image icons, but certificate links that point to missing files will not open successfully.
+The compact two-page BNSP certificate PDF is committed at `assets/documents/sertifikat-jointer-bnsp.pdf`. These files were optimized from the supplied portfolio package to reduce repository size. Keep the original ZIP as the source for full-resolution copies.
 
 ## Run locally
 Open `index.html` in a browser, or use a local server such as VS Code Live Server.
