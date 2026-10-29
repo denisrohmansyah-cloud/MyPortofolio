@@ -56,3 +56,33 @@ h1,h2,h3,p{margin-top:0}h1{font-size:clamp(43px,5.4vw,74px);line-height:1.08;let
 .swipe-gallery-slide:has(>img.broken-image) .media-fallback{visibility:visible}
 .swipe-gallery-slide>img{object-fit:contain;background:#101b2a}
 .swipe-gallery-slide>img:not(.broken-image){image-rendering:auto}
+
+/* kWh-Ku gallery: consistent responsive frame; show each full photo without cropping. */
+.project-media-carousel{
+  height:auto;
+  aspect-ratio:16 / 9;
+  min-height:0;
+  max-height:none;
+}
+.project-media-carousel .swipe-gallery-track,
+.project-media-carousel .swipe-gallery-slide{
+  height:100%;
+}
+.project-media-carousel .swipe-gallery-slide>img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  background:#101b2a;
+  image-rendering:auto;
+}
+.project-media-carousel .swipe-gallery-slide .media-fallback{
+  visibility:hidden;
+  pointer-events:none;
+}
+.project-media-carousel .swipe-gallery-slide>img.broken-image + .media-fallback{
+  visibility:visible;
+}
+@media (max-width:700px){
+  .project-media-carousel{aspect-ratio:4 / 3;}
+}
